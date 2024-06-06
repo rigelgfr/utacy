@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black !important;
+}
+
+.container {
+    width: 50%;
+    color: white;
+}
+
+.container #welcome {
+    font-size: 74px;
+}
+
+.container #slogan {
+    font-size: 88px;
+    color: #A3C7D6;
+    font-weight: bold;
+}
+
+.container p {
+    font-size: 32px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+}

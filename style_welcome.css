@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-image: url('vinylbg.jpg');
+  background-size: cover;
+  place-content: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  --size: 250px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
+}
+
+* {
+  transition: all 0.25s ease-out;
+  }
+
+.container {
+  width: 40%;
+  color: white;
+  position: absolute;
+  z-index: 2;
+
+}
+
+.container #welcome {
+  font-size: 40px;
+}
+
+.container #slogan {
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+}
+
+.container p {
+  font-size: 24px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: end;
+  height: 100%;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.my-button {
+  margin: 0;
+  background-color: #4f2892;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+  transition: 0.5s ease;
+
+}
+
+.my-button2 {
+  margin: 0 40px;
+  background-color: white;
+  color: #6f39cc;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+  transition: 0.5s ease;
+}
+
+.my-button:hover {
+  background-color: hsl(158, 82%, 57%, 85%);
+}
+
+.my-button2:hover {
+  color: hsl(158, 82%, 57%, 85%);
+   
+}
+

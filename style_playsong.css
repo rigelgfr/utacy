@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.bg_container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #252525;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    margin: auto;
+    background-color:rgb(98, 28, 163);
+    color: rgb(81, 6, 128);
+}
+
+.logo {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    float:left;
+}
+
+.logo h3 {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.nav {
+    width: auto;
+    height: 100%;
+    padding: 0;
+    clear: none;
+    margin: 0;
+    float:right;
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    height: 100%;
+    margin: 0;
+    padding: 16px 30px;
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nav .logout {
+    background-color: rgb(78, 22, 130);
+}
+
+.nav a:hover {
+    color: #cdcdcd;
+    border-bottom: 3px solid hsl(158, 82%, 57%, 85%);
+}
+
+.main_panel {
+    height: calc(100% - 60px);
+}
+
+.left_panel {
+    background-color: #191919;
+    width: 15%;
+    height: 100%;
+    float: left;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+div::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+.hello {
+    height: auto;
+    width: auto;
+    color: white;
+}
+
+.hello h4 {
+    margin-left: 20px;
+    margin-top: 25px;
+    font-weight: lighter;
+}
+
+.playlist {
+    height: auto;
+    width: auto;
+    margin: 40px 20px;
+    color: white;
+    overflow-x: auto;
+    max-height: 100%;
+}
+
+.playlist ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.playlist a {
+    text-decoration: none;
+}
+
+.playlist p {
+    text-decoration: none;
+    color:rgb(174, 174, 174);
+}
+
+.playlist p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.right_panel {
+    width: 85%;
+    height: calc(100%-60px);
+    float: right;
+    color: white;
+}
+
+.create {
+    margin : 5% 5% 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-preview-container {
+    width: auto;
+    border: 1px solid rgba(71, 47, 47, 0.1);
+}
+
+.image-preview-container img {
+    width: 300px;
+    height: 300px;
+}
+
+.label {
+    line-height: 8px;
+    text-align: center;
+}
+
+#labelTitle {
+    font-weight: bold;
+    font-size: large;
+}
+
+#labelAlbum {
+    color: #9e9d9d;
+    font-size: small;
+    font-weight: bold;
+
+}
+
+.playbar {
+    height: 90px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+}
+
+.details-container {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.details {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.details p {
+    color: white;
+    line-height: 0.5em;
+    font-size: 16px;
+}
+
+.controls {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.playbutton {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.playbutton button {
+    background-color: transparent;
+    border: none;
+    line-height: 45px;
+}
+
+.playbutton i {
+    color: white;
+    transition: 0.2s;
+}
+
+.playbutton i:hover {
+    color: #c3c3c3;
+}
+
+.bi.bi-pause-circle-fill {
+    font-size: 45px;
+}
+
+.slider {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seekBar {
+    width: 80%;
+    height: 5px;
+    background-color: white;
+    -webkit-appearance: none;
+}
+
+#seekBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(202, 42, 255);
+    cursor: pointer;
+  }
+
+#seekBar:hover {
+    height: 5px;
+}
+
+#seekBar::-webkit-slider-thumb:hover {
+    width: 15px;
+    height: 15px;
+  }
+
+.skipbutton {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    -webkit-appearance: none;
+}
+
+.button-container {
+    display: flex;
+}
+
+.skipbutton button {
+    background-color: transparent;
+    border: none;
+    line-height: 20px;
+}
+
+.skipbutton i {
+    color: white;
+    transition: 0.2s;
+}
+
+.skipbutton i:hover {
+    color: #c3c3c3;
+}
+
+.bi.bi-skip-start-fill, .bi.bi-skip-end-fill {
+    font-size: 30px;
+}
+
+.delete-container {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#vol-control {
+    width: 25%;
+    height: 2px;
+    transition: 0.1s;
+    background-color: grey;
+    -webkit-appearance: none;
+}
+
+#vol-control::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey;
+    cursor: pointer;
+  }
+
+#vol-control:hover {
+    height: 5px;
+}
+
+#vol-control::-webkit-slider-thumb:hover {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(98, 28, 163);
+  }
+
+.delete-container button {
+    background-color: transparent;
+    border: none;
+    margin: 0 10px;
+}
+
+.delete-container i {
+    color: white;
+    transition: 0.2s;
+    font-size: 25px;
+    line-height: 19px;
+}
+
+.delete-container i:hover {
+    color: #c3c3c3;
+}
+
+.delete button {
+    background-color: transparent;
+    border: none;
+    margin: 0 20px;
+}
+
+.delete i {
+    color: white;
+    transition: 0.2s;
+}
+
+.delete i:hover {
+    color: #ff2f2f;
+}
+
+.bi.bi-shuffle, .bi.bi-arrow-repeat {
+    font-size: 20px;
+}
+
+.time {
+    margin: 0 8px;
+    font-size: 15px;
+    color: rgb(106, 106, 106);
+}
+
+
